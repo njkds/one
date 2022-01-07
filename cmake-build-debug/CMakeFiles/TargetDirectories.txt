@@ -1,0 +1,5 @@
+/home/dell/Desktop/v1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/dell/Desktop/v1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dell/Desktop/v1/cmake-build-debug/CMakeFiles/yolo.dir
+/home/dell/Desktop/v1/cmake-build-debug/CMakeFiles/v1.dir
+/home/dell/Desktop/v1/cmake-build-debug/CMakeFiles/plugin_list.dir
