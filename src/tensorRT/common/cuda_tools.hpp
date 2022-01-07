@@ -1,8 +1,7 @@
 #ifndef CUDA_TOOLS_HPP
 #define CUDA_TOOLS_HPP
 
-
-/*
+/**
  *  系统关于CUDA的功能函数
  */
 

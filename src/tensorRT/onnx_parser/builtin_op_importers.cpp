@@ -190,7 +190,7 @@ DEFINE_BUILTIN_OP_IMPORTER(Plugin)
         printf("%s plugin was not found in the plugin registry!", name.c_str());
         ASSERT(false, ErrorCode::kUNSUPPORTED_NODE);
     }
-    
+
     nvinfer1::PluginFieldCollection pluginFieldCollection;
     pluginFieldCollection.nbFields = 0;
 
@@ -205,15 +205,15 @@ DEFINE_BUILTIN_OP_IMPORTER(Plugin)
         auto& weight = weights[i];
         std::vector<int> dims(weight.shape.d, weight.shape.d + weight.shape.nbDims);
         std::shared_ptr<TRT::Tensor> dweight(new TRT::Tensor(dims));
-        
+
         if(weight.type != ::ONNX_NAMESPACE::TensorProto::FLOAT){
             LOG_ERROR("unsupport weight type: " << weight.type);
         }
-        
+
         memcpy(dweight->cpu(), weight.values, dweight->bytes());
         weightTensors.push_back(dweight);
     }
-    
+
     plugin->pluginInit(name, info, weightTensors);
     auto layer = ctx->network()->addPluginV2(inputTensors.data(), inputTensors.size(), *plugin);
     std::vector<TensorOrWeights> outputs;
@@ -3543,7 +3543,7 @@ DEFINE_BUILTIN_OP_IMPORTER(Reshape)
     if(g_layerhook_func_reshape){
         shape.set_values(g_layerhook_func_reshape(node.name(), shape.values()));
     }
-    
+
     nvinfer1::IShuffleLayer* layer = addShuffle(ctx, data, shape, /*zeroIsPlaceholder=*/!allowZero);
     ctx->registerLayer(layer, getNodeName(node));
     RETURN_FIRST_OUTPUT(layer);
@@ -4519,7 +4519,7 @@ DEFINE_BUILTIN_OP_IMPORTER(Upsample)
             scale_factors[i] = scales[i];
         }
     }
-    #endif 
+    #endif
 
     ASSERT(attrs.count("scales") && "Attribute scales is missing.", ErrorCode::kUNSUPPORTED_NODE);
     // Get scale factors from OnnxAttrs.

@@ -11,8 +11,8 @@
 #include <vector>
 #include <iostream>
 #include <sstream>
-#include <assert.h>
-#include <stdarg.h>
+#include <cassert>
+#include <cstdarg>
 #include <common/cuda_tools.hpp>
 
 using namespace nvinfer1;   

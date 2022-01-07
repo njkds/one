@@ -38,13 +38,13 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
+CMAKE_CXX_COMPILER:STRING=/usr/bin/c++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -70,7 +70,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
+CMAKE_C_COMPILER:STRING=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -94,6 +94,9 @@ CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 
 //Flags used by the C compiler during RELWITHDEBINFO builds.
 CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
+
+//No help, variable specified on the command line.
+CMAKE_DEPENDS_USE_COMPILER:UNINITIALIZED=FALSE
 
 //Path to a program.
 CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
@@ -1147,7 +1150,7 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 CUDA_64_BIT_DEVICE_CODE-ADVANCED:INTERNAL=1
 //List of intermediate files that are part of the cuda dependency
 // scanning.
-CUDA_ADDITIONAL_CLEAN_FILES:INTERNAL=/home/dell/Desktop/v1/build/CMakeFiles/plugin_list.dir/src/application/app_yolo/plugin_list_generated_yolo_decode.cu.o.depend;/home/dell/Desktop/v1/build/CMakeFiles/plugin_list.dir/src/tensorRT/common/plugin_list_generated_preprocess_kernel.cu.o.depend;/home/dell/Desktop/v1/build/CMakeFiles/plugin_list.dir/src/tensorRT/onnxplugin/plugins/plugin_list_generated_DCNv2.cu.o.depend;/home/dell/Desktop/v1/build/CMakeFiles/plugin_list.dir/src/tensorRT/onnxplugin/plugins/plugin_list_generated_HSwish.cu.o.depend;/home/dell/Desktop/v1/cmake-build-debug/CMakeFiles/plugin_list.dir/src/application/app_yolo/plugin_list_generated_yolo_decode.cu.o.depend;/home/dell/Desktop/v1/cmake-build-debug/CMakeFiles/plugin_list.dir/src/tensorRT/common/plugin_list_generated_preprocess_kernel.cu.o.depend;/home/dell/Desktop/v1/cmake-build-debug/CMakeFiles/plugin_list.dir/src/tensorRT/onnxplugin/plugins/plugin_list_generated_HSwish.cu.o.depend
+CUDA_ADDITIONAL_CLEAN_FILES:INTERNAL=/home/dell/Desktop/v1/build/CMakeFiles/plugin_list.dir/src/application/app_yolo/plugin_list_generated_yolo_decode.cu.o.depend;/home/dell/Desktop/v1/build/CMakeFiles/plugin_list.dir/src/tensorRT/common/plugin_list_generated_preprocess_kernel.cu.o.depend;/home/dell/Desktop/v1/build/CMakeFiles/plugin_list.dir/src/tensorRT/onnxplugin/plugins/plugin_list_generated_DCNv2.cu.o.depend;/home/dell/Desktop/v1/build/CMakeFiles/plugin_list.dir/src/tensorRT/onnxplugin/plugins/plugin_list_generated_HSwish.cu.o.depend;/home/dell/Desktop/v1/cmake-build-debug/CMakeFiles/plugin_list.dir/src/application/app_yolo/plugin_list_generated_yolo_decode.cu.o.depend;/home/dell/Desktop/v1/cmake-build-debug/CMakeFiles/plugin_list.dir/src/tensorRT/common/plugin_list_generated_preprocess_kernel.cu.o.depend;/home/dell/Desktop/v1/cmake-build-debug/CMakeFiles/plugin_list.dir/src/tensorRT/onnxplugin/plugins/plugin_list_generated_HSwish.cu.o.depend;/home/dell/Desktop/v1/cmake-build-debug/CMakeFiles/plugin_list.dir/src/tensorRT/onnxplugin/plugins/plugin_list_generated_DCNv2.cu.o.depend
 //ADVANCED property for variable: CUDA_ATTACH_VS_BUILD_RULE_TO_CUDA_FILE
 CUDA_ATTACH_VS_BUILD_RULE_TO_CUDA_FILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CUDA_BUILD_CUBIN

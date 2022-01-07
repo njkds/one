@@ -436,7 +436,10 @@ CMakeFiles/v1.dir/src/application/tools/deepsort.cpp.o: /usr/local/cuda/include/
 CMakeFiles/v1.dir/src/application/tools/deepsort.cpp.o: /usr/local/cuda/include/vector_types.h
 
 CMakeFiles/v1.dir/src/main.cpp.o: ../src/application/app_yolo/yolo.hpp
+CMakeFiles/v1.dir/src/main.cpp.o: ../src/tensorRT/builder/trt_builder.hpp
 CMakeFiles/v1.dir/src/main.cpp.o: ../src/tensorRT/common/ilogger.hpp
+CMakeFiles/v1.dir/src/main.cpp.o: ../src/tensorRT/common/trt_tensor.hpp
+CMakeFiles/v1.dir/src/main.cpp.o: ../src/tensorRT/infer/trt_infer.hpp
 CMakeFiles/v1.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/v1.dir/src/main.cpp.o: /home/dell/opencv4/include/opencv4/opencv2/calib3d.hpp
 CMakeFiles/v1.dir/src/main.cpp.o: /home/dell/opencv4/include/opencv4/opencv2/core.hpp
@@ -886,7 +889,6 @@ CMakeFiles/v1.dir/src/main.cpp.o: /usr/local/include/pcl-1.12/pcl/impl/point_typ
 CMakeFiles/v1.dir/src/main.cpp.o: /usr/local/include/pcl-1.12/pcl/io/file_io.h
 CMakeFiles/v1.dir/src/main.cpp.o: /usr/local/include/pcl-1.12/pcl/io/impl/pcd_io.hpp
 CMakeFiles/v1.dir/src/main.cpp.o: /usr/local/include/pcl-1.12/pcl/io/impl/vtk_lib_io.hpp
-CMakeFiles/v1.dir/src/main.cpp.o: /usr/local/include/pcl-1.12/pcl/io/io.h
 CMakeFiles/v1.dir/src/main.cpp.o: /usr/local/include/pcl-1.12/pcl/io/low_level_io.h
 CMakeFiles/v1.dir/src/main.cpp.o: /usr/local/include/pcl-1.12/pcl/io/lzf.h
 CMakeFiles/v1.dir/src/main.cpp.o: /usr/local/include/pcl-1.12/pcl/io/pcd_io.h

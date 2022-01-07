@@ -15,6 +15,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/plugin_list.dir/src/application/app_yolo/plugin_list_generated_yolo_decode.cu.o.depend"
   "CMakeFiles/plugin_list.dir/src/tensorRT/common/plugin_list_generated_preprocess_kernel.cu.o.cmake.pre-gen"
   "CMakeFiles/plugin_list.dir/src/tensorRT/common/plugin_list_generated_preprocess_kernel.cu.o.depend"
+  "CMakeFiles/plugin_list.dir/src/tensorRT/onnxplugin/plugins/plugin_list_generated_DCNv2.cu.o.cmake.pre-gen"
+  "CMakeFiles/plugin_list.dir/src/tensorRT/onnxplugin/plugins/plugin_list_generated_DCNv2.cu.o.depend"
   "CMakeFiles/plugin_list.dir/src/tensorRT/onnxplugin/plugins/plugin_list_generated_HSwish.cu.o.cmake.pre-gen"
   "CMakeFiles/plugin_list.dir/src/tensorRT/onnxplugin/plugins/plugin_list_generated_HSwish.cu.o.depend"
   "/home/dell/opencv4/lib/cmake/opencv4/OpenCVConfig-version.cmake"
@@ -130,9 +132,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/plugin_list.dir/src/application/app_yolo/plugin_list_generated_yolo_decode.cu.o.cmake.pre-gen"
   "CMakeFiles/plugin_list.dir/src/tensorRT/common/plugin_list_generated_preprocess_kernel.cu.o.cmake.pre-gen"
+  "CMakeFiles/plugin_list.dir/src/tensorRT/onnxplugin/plugins/plugin_list_generated_DCNv2.cu.o.cmake.pre-gen"
   "CMakeFiles/plugin_list.dir/src/tensorRT/onnxplugin/plugins/plugin_list_generated_HSwish.cu.o.cmake.pre-gen"
   "CMakeFiles/plugin_list.dir/src/application/app_yolo/plugin_list_generated_yolo_decode.cu.o.Debug.cmake"
   "CMakeFiles/plugin_list.dir/src/tensorRT/common/plugin_list_generated_preprocess_kernel.cu.o.Debug.cmake"
+  "CMakeFiles/plugin_list.dir/src/tensorRT/onnxplugin/plugins/plugin_list_generated_DCNv2.cu.o.Debug.cmake"
   "CMakeFiles/plugin_list.dir/src/tensorRT/onnxplugin/plugins/plugin_list_generated_HSwish.cu.o.Debug.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
